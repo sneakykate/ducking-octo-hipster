@@ -1,0 +1,31 @@
+<h2> Add a Job </h2>
+
+<!-- add a form for adding a client -->
+<% form_for @job do |f| %>
+
+  <%= f.label "Job Name" %>
+  <%= f.text_field :job_name , placeholder: "Jurassic Cop"%>
+  <br><br>
+  <%= f.label "Job Number" %>
+  <%= f.text_field :job_num , placeholder: "12345"%>
+  <br><br>
+  <%= f.label "Executive Producer" %>
+  <%= f.text_field :EP_name %>
+  <br><br>
+  <%= f.label "Production Company" %>
+  <%= f.text_field :prod_co %>
+  <br><br>
+  <%= f.label "Production HQ Address" %>
+  <%= f.text_field :prod_co_address %>
+  <br><br>
+  <%= f.label "Director" %>
+  <%= f.text_field :director %>
+  <br><br>
+   <%= f.label "Agency" %>
+  <%= f.file_field :agency_id %>
+  <br><br>
+  <%= f.submit 'Create Company', :class => 'btn btn-primary btn-lg'  %>
+
+<% end %>
+
+
